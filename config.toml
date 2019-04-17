@@ -1,4 +1,4 @@
-baseURL = "http://localhost:1313/"
+baseURL = "https://mesh19.netlify.com/"
 languageCode = "en-us"
 title = "MESH"
 tags = ["steam", "education", "fablab", "events", "educational", "programs"]
