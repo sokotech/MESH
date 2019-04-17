@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "http://localhost:1313/"
 languageCode = "en-us"
 title = "MESH"
 tags = ["steam", "education", "fablab", "events", "educational", "programs"]
@@ -16,7 +16,7 @@ googleAnalytics = ""
     useSessionStorage = false
 
 [params]
-  slogan = "MESH is an initiative by SokoTech"
+  slogan = "An initiative by SokoTech"
   description = "Mesh description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
   copyright = [
     "&copy; 2019 SokoTech"

@@ -4,23 +4,346 @@ author: Edgaar + SokoTech
 ver: 0.1
 ------------------------- */
 
+/* ----- fonts --------------- */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700,900|Open+Sans:400,600,700');
+
 /* ----- colors ------------
 
-dark-gray: #191919
+dark-gray: #111111
 light-gray: #CCCCCC
 
 ------------------------- */
 
 /* ----- general -------- */
 
-/* ----- header --------- */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
 
-/* ----- navigation ----- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: 1.9em;
+  line-height: 1.3em
+}
+
+.uppercase-title {
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.pointer-tip {
+  display: inline;
+  position: relative;
+  content: attr(title);
+}
+
+.pointer-tip:hover:after{
+    background: #333;
+    background: #111111;
+    border-radius: 0px;
+    bottom: -50px;
+    color: #fff;
+    content: attr(title);
+    left: 20%;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 98;
+    width: 150px;
+}
+
+@media (min-width: 576px) {
+
+  h1 {
+    font-size: 2.3em;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  .pointer-tip:hover:after{
+      bottom: 50px;
+  }
+
+}
+
+@media (min-width: 992px) {
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+    .pointer-tip:hover:after{
+        bottom: 50px;
+    }
+
+}
+
+/* ----- navigation ---------------------------- */
+
+.bg-dark {
+  background-color: #111111e6 !important;
+}
+
+.navbar-brand {
+  width: 149px;
+  padding: 10px;
+}
+
+/* ----- home ---------------------------------- */
+
+.home-bg {
+  background-color: #111111;
+  height: 550px;
+}
+
+#mesh-hero-bg-graphic {
+  width: 83%;
+  margin: 118px 0 0 5px;
+  transform: rotate(243deg)
+}
+
+#mesh-hero-title {
+  display: block;
+  position: absolute;
+  width: 150px;
+  padding: 150px 0;
+  top: 240px;
+  right: 30px;
+}
+
+.home-hero {
+   margin-bottom: 60px;
+}
+
+.home-hero-img-container {
+  padding: 0 !important;
+}
+
+#home-hero-img {
+  width: auto;
+}
+
+@media (min-width: 360px) {
+  .home-bg {
+    height: 490px;
+  }
+}
+
+@media (min-width: 576px) {
+
+  .home-bg {
+    height: auto;
+  }
+
+  .home-hero {
+     margin-bottom: 90px;
+  }
+
+  #mesh-hero-bg-graphic {
+    width: 59%;
+    margin: 100px 0 70px 30px;
+    transform: rotate(0deg)
+  }
+
+  #mesh-hero-title {
+    width: 250px;
+    padding: 80px 0;
+    top: 115px;
+    right: 47px;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  #mesh-hero-title {
+    width: 335px;
+    padding: 100px 0;
+  }
+
+}
+
+
+@media (min-width: 992px) {
+
+  #mesh-hero-title {
+    width: 400px;
+    padding: 150px 0;
+    top: 150px;
+  }
+
+  #mesh-hero-bg-graphic {
+    width: 65%;
+    margin: 100px 0 70px 30px;
+  }
+
+}
+
+
+@media (min-width: 1200px) {
+
+  #mesh-hero-title {
+    width: 470px;
+    top: 170px;
+  }
+
+}
+
+/* ----- pages ---------------------------------- */
+
+.page-header-banner {
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+#about-header-banner {
+  background-image: url("/img/01/mesh-banner-01.jpg");
+  background-color: #636363;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page-one-col-description {
+  margin-bottom: 50px;
+}
+
+.page-three_col_description {
+  margin-bottom: 50px;
+}
+
+#page-three_col_item {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+
+  .page-header-banner {
+    margin-bottom: 70px;
+  }
+
+  #about-header-banner {
+    height: 250px;
+  }
+
+  .page-one-col-description {
+    margin-bottom: 70px;
+  }
+
+  .page-three_col_description {
+    margin-bottom: 70px;
+  }
+
+}
+
+@media (min-width: 992px) {
+
+  #about-header-banner {
+    height: 300px;
+  }
+
+}
+
+/* ----- about ------- */
 
 
 
-/* ----- home ----------- */
+/* ----- footer --------------------------------- */
 
-/* ----- pages ---------- */
+.main-footer {
+  height: 200px;
+  background-color: #111111;
+}
 
-/* ----- footer --------- */
+#mesh-logo-text-footer {
+  width: 130px;
+  padding: 17px 0 0 15px;
+}
+
+#footer-icons-container {
+  display: block;
+  position: relative;
+  padding: 35px 0 0 0;
+}
+
+.mesh-icon-footer {
+  color: white;
+  font-size: 1.7em;
+  padding: 0 10px;
+}
+
+#mesh-logo-footer {
+  float: right;
+  width: 130px;
+  padding: 25px 15px 0 0;
+}
+
+@media (min-width: 768px) {
+
+    .main-footer {
+      height: 80px;
+    }
+
+    #footer-icons-container {
+      padding: 25px 0;
+      text-align: center;
+
+    }
+
+    .mesh-icon-footer {
+      padding: 0 13px;
+    }
+
+}
+
+
+@media (min-width: 992px) {
+
+  #mesh-logo-text-footer {
+    width: 130px;
+    padding: 17px 0 0 15px;
+  }
+
+  .mesh-icon-footer {
+    font-size: 1.9em;
+    padding: 0 17px;
+  }
+
+  #footer-icons-container {
+    padding: 24px 0;
+  }
+
+  #mesh-logo-footer {
+    float: right;
+    width: 130px;
+    padding: 25px 15px 0 0;
+  }
+
+}
+
+
+@media (min-width: 1200px) {
+}
+
+
+/* @media (min-width: 576px) {  }
+
+@media (min-width: 768px) {  }
+
+@media (min-width: 992px) {  }
+
+@media (min-width: 1200px) {  } */
